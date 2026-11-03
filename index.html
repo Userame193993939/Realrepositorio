@@ -1,0 +1,224 @@
+ <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renata Patricia 💖</title>
+    <style>
+        /* Variables de diseño - Tonos femeninos y modernos */
+        :root {
+            --primary-color: #ff66a3;
+            --secondary-color: #ffe6f0;
+            --text-main: #2c2c2c;
+            --text-muted: #757575;
+            --bg-color: #f7f9fc;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.5;
+        }
+
+        /* Contenedor principal que simula pantalla móvil en PC */
+        .mobile-container {
+            max-width: 480px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            min-height: 100vh;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            padding-bottom: 30px;
+        }
+
+        /* Cabecera del perfil */
+        .profile-header {
+            text-align: center;
+            padding: 30px 20px 20px;
+        }
+
+        .profile-pic {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid var(--primary-color);
+            padding: 3px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(255, 102, 163, 0.2);
+        }
+
+        .profile-name {
+            font-size: 22px;
+            font-weight: 700;
+            margin-top: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+        }
+
+        .verification-badge {
+            color: #1da1f2;
+            font-size: 16px;
+        }
+
+        .profile-info {
+            font-size: 14px;
+            color: var(--text-muted);
+            margin-top: 5px;
+            font-weight: 500;
+        }
+
+        .profile-bio {
+            font-size: 15px;
+            margin-top: 15px;
+            padding: 0 10px;
+        }
+
+        /* Botones de interacción (Enlaces de monetización) */
+        .action-buttons {
+            padding: 0 25px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 14px;
+            border-radius: 12px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 600;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .btn:active {
+            transform: scale(0.98);
+        }
+
+        .btn-whatsapp {
+            background-color: #25D366;
+            color: white;
+            box-shadow: 0 4px 10px rgba(37, 211, 102, 0.3);
+        }
+
+        .btn-primary {
+            background-color: var(--primary-color);
+            color: white;
+            box-shadow: 0 4px 10px rgba(255, 102, 163, 0.3);
+        }
+
+        .btn-secondary {
+            background-color: var(--secondary-color);
+            color: var(--primary-color);
+            border: 1px solid rgba(255, 102, 163, 0.2);
+        }
+
+        /* Galería de imágenes (Cuadrícula 2x2) */
+        .gallery-title {
+            padding: 0 25px;
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            color: var(--text-main);
+        }
+
+        .photo-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 3px;
+            padding: 0 3px;
+        }
+
+        .photo-link {
+            display: block;
+            position: relative;
+            aspect-ratio: 4 / 5;
+            overflow: hidden;
+            background-color: #eee;
+        }
+
+        .photo-link img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .photo-link:active img {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="mobile-container">
+        
+        <!-- Sección de Perfil -->
+        <header class="profile-header">
+            <!-- Usamos 156080.jpg como foto de perfil principal -->
+            <img src="156080.jpg" alt="Foto de perfil de Renata" class="profile-pic">
+            <h1 class="profile-name">Renata Patricia <span class="verification-badge">✓</span></h1>
+            <p class="profile-info">📍 Brasil • 34 años</p>
+            <p class="profile-bio">¡Hola, mis amores! ✨ Soy Renata. Bienvenidos a mi espacio personal donde comparto un pedacito de mi vida diaria. Quédate para conocerme un poquito más. 💖</p>
+        </header>
+
+        <!-- Botones de Interacción (Aquí insertaremos los Direct Links de Adsterra) -->
+        <section class="action-buttons">
+            <a href="#ENLACE_ADSTERRA_1" class="btn btn-whatsapp" target="_blank" rel="noopener">📲 WhatsApp Privado</a>
+            <a href="#ENLACE_ADSTERRA_2" class="btn btn-primary" target="_blank" rel="noopener">💌 Enviar Mensaje</a>
+            <a href="#ENLACE_ADSTERRA_3" class="btn btn-secondary" target="_blank" rel="noopener">📸 Ver contenido exclusivo</a>
+        </section>
+
+        <!-- Galería de Fotos (Cada foto es un enlace a Adsterra) -->
+        <h2 class="gallery-title">Mis fotografías recientes 👇</h2>
+        <section class="photo-grid">
+            <a href="#ENLACE_ADSTERRA_4" class="photo-link" target="_blank" rel="noopener">
+                <img src="156077.png" alt="Renata cotidiana" loading="lazy">
+            </a>
+            <a href="#ENLACE_ADSTERRA_5" class="photo-link" target="_blank" rel="noopener">
+                <img src="156081.jpg" alt="Renata cotidiana" loading="lazy">
+            </a>
+            <a href="#ENLACE_ADSTERRA_6" class="photo-link" target="_blank" rel="noopener">
+                <img src="156075.jpg" alt="Renata cotidiana" loading="lazy">
+            </a>
+            <a href="#ENLACE_ADSTERRA_7" class="photo-link" target="_blank" rel="noopener">
+                <img src="156079.jpg" alt="Renata cotidiana" loading="lazy">
+            </a>
+            <a href="#ENLACE_ADSTERRA_8" class="photo-link" target="_blank" rel="noopener">
+                <img src="156076.jpg" alt="Renata cotidiana" loading="lazy">
+            </a>
+            <a href="#ENLACE_ADSTERRA_9" class="photo-link" target="_blank" rel="noopener">
+                <img src="156074.jpg" alt="Renata cotidiana" loading="lazy">
+            </a>
+            <a href="#ENLACE_ADSTERRA_10" class="photo-link" target="_blank" rel="noopener">
+                <img src="156073.jpg" alt="Renata cotidiana" loading="lazy">
+            </a>
+            <a href="#ENLACE_ADSTERRA_11" class="photo-link" target="_blank" rel="noopener">
+                <img src="156072.jpg" alt="Renata cotidiana" loading="lazy">
+            </a>
+            <a href="#ENLACE_ADSTERRA_12" class="photo-link" target="_blank" rel="noopener">
+                <img src="156078.jpg" alt="Renata cotidiana" loading="lazy">
+            </a>
+            <a href="#ENLACE_ADSTERRA_13" class="photo-link" target="_blank" rel="noopener">
+                <img src="156080.jpg" alt="Renata cotidiana" loading="lazy">
+            </a>
+        </section>
+
+    </div>
+
+</body>
+                  </html>
+                  
